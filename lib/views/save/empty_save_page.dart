@@ -20,8 +20,8 @@ class EmptySavePage extends StatelessWidget {
               padding: EdgeInsets.all(AppDefaults.padding * 2),
               child: AspectRatio(
                 aspectRatio: 1 / 1,
-                child:
-                    NetworkImageWithLoader('https://i.imgur.com/mbjap7k.png'),
+                child: NetworkImageWithLoader(
+                    'http://zhanggp.top/grocery/images/mbjap7k.png'),
               ),
             ),
           ),

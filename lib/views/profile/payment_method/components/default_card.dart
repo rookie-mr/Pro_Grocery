@@ -14,7 +14,7 @@ class PaymentDefaultCard extends StatelessWidget {
       cardHolderName: 'Dannis Alvert',
       labelCardHolder: 'Dannis',
       isHolderNameVisible: true,
-      backgroundNetworkImage: 'https://i.imgur.com/uUDkwQx.png',
+      backgroundNetworkImage: 'http://zhanggp.top/grocery/images/uUDkwQx.png',
       cvvCode: '5424',
       showBackView: false,
       cardType: CardType.visa,

@@ -20,21 +20,21 @@ class BottomActionBar extends StatelessWidget {
       child: Row(
         children: [
           const ProductAvatarWithQuanitty(
-            productImage: 'https://i.imgur.com/vom6opy.png',
+            productImage: 'http://zhanggp.top/grocery/images/vom6opy.png',
             quantity: 2,
           ),
           const ProductAvatarWithQuanitty(
-            productImage: 'https://i.imgur.com/GIqY9ym.png',
+            productImage: 'http://zhanggp.top/grocery/images/GIqY9ym.png',
             quantity: 0,
           ),
           const ProductAvatarWithQuanitty(
-            productImage: 'https://i.imgur.com/1xYlwGD.png',
+            productImage: 'http://zhanggp.top/grocery/images/1xYlwGD.png',
             quantity: 5,
           ),
-          // const ProductAvatarWithQuanitty(
-          //   productImage: 'https://i.imgur.com/W6DJD9Y.png',
-          //   quantity: 0,
-          // ),
+          const ProductAvatarWithQuanitty(
+            productImage: 'http://zhanggp.top/grocery/images/W6DJD9Y.png',
+            quantity: 0,
+          ),
           const Spacer(),
           Text(
             '\$35.05',

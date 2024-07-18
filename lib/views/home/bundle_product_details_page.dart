@@ -24,9 +24,9 @@ class BundleProductDetailsPage extends StatelessWidget {
           children: [
             const ProductImagesSlider(
               images: [
-                'https://i.imgur.com/NOuZzbe.png',
-                'https://i.imgur.com/NOuZzbe.png',
-                'https://i.imgur.com/NOuZzbe.png',
+                'http://zhanggp.top/grocery/images/NOuZzbe.png',
+                'http://zhanggp.top/grocery/images/NOuZzbe.png',
+                'http://zhanggp.top/grocery/images/NOuZzbe.png',
               ],
             ),
             /* <---- Product Data -----> */

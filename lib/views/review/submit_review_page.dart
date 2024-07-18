@@ -35,8 +35,8 @@ class SubmitReviewPage extends StatelessWidget {
                 height: 100,
                 child: AspectRatio(
                   aspectRatio: 1 / 1,
-                  child:
-                      NetworkImageWithLoader('https://i.imgur.com/aMo2GQb.png'),
+                  child: NetworkImageWithLoader(
+                      'http://zhanggp.top/grocery/images/aMo2GQb.png'),
                 ),
               ),
               Padding(

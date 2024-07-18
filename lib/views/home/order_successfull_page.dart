@@ -21,7 +21,7 @@ class OrderSuccessfullPage extends StatelessWidget {
               child: const AspectRatio(
                 aspectRatio: 1 / 1,
                 child: NetworkImageWithLoader(
-                  'https://i.imgur.com/Fj9gVGy.png',
+                  'http://zhanggp.top/grocery/images/Fj9gVGy.png',
                   fit: BoxFit.contain,
                 ),
               ),

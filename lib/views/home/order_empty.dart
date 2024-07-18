@@ -18,7 +18,7 @@ class OrderEmpty extends StatelessWidget {
             child: const AspectRatio(
               aspectRatio: 1 / 1,
               child: NetworkImageWithLoader(
-                'https://i.imgur.com/EMI82tU.png',
+                'http://zhanggp.top/grocery/images/EMI82tU.png',
                 fit: BoxFit.contain,
               ),
             ),

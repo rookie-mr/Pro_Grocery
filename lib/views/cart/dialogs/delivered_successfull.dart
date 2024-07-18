@@ -25,7 +25,7 @@ class DeliverySuccessfullDialog extends StatelessWidget {
             const AspectRatio(
               aspectRatio: 1 / 1,
               child: NetworkImageWithLoader(
-                'https://i.imgur.com/DQqtvkL.png',
+                'http://zhanggp.top/grocery/images/DQqtvkL.png',
                 fit: BoxFit.contain,
               ),
             ),
@@ -65,7 +65,8 @@ class DeliverySuccessfullDialog extends StatelessWidget {
                   Navigator.pushNamed(context, AppRoutes.entryPoint);
                 },
                 style: OutlinedButton.styleFrom(
-                  foregroundColor: AppColors.primary, side: const BorderSide(color: AppColors.primary),
+                  foregroundColor: AppColors.primary,
+                  side: const BorderSide(color: AppColors.primary),
                 ),
                 child: const Text('Browse Home'),
               ),

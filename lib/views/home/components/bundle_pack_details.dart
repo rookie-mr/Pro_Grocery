@@ -30,8 +30,8 @@ class PackDetails extends StatelessWidget {
             (index) => ListTile(
               leading: const AspectRatio(
                 aspectRatio: 1 / 1,
-                child:
-                    NetworkImageWithLoader('https://i.imgur.com/Y0IFT2g.png'),
+                child: NetworkImageWithLoader(
+                    'http://zhanggp.top/grocery/images/Y0IFT2g.png'),
               ),
               title: const Text('Cabbage'),
               trailing: Text(

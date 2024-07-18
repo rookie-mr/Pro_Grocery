@@ -20,8 +20,8 @@ class EmptyCartPage extends StatelessWidget {
               padding: EdgeInsets.all(AppDefaults.padding * 2),
               child: AspectRatio(
                 aspectRatio: 1 / 1,
-                child:
-                    NetworkImageWithLoader('https://i.imgur.com/3avdket.png'),
+                child: NetworkImageWithLoader(
+                    'http://zhanggp.top/grocery/images/3avdket.png'),
               ),
             ),
           ),

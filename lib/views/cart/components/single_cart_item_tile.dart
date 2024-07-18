@@ -26,7 +26,7 @@ class SingleCartItemTile extends StatelessWidget {
                 child: AspectRatio(
                   aspectRatio: 1 / 1,
                   child: NetworkImageWithLoader(
-                    'https://i.imgur.com/4YEHvGc.png',
+                    'http://zhanggp.top/grocery/images/4YEHvGc.png',
                     fit: BoxFit.contain,
                   ),
                 ),

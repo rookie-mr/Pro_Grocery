@@ -100,7 +100,7 @@ class ContactUsPage extends StatelessWidget {
               child: const AspectRatio(
                 aspectRatio: 3 / 2,
                 child: NetworkImageWithLoader(
-                  'https://i.imgur.com/nys3Bxw.png',
+                  'http://zhanggp.top/grocery/images/nys3Bxw.png',
                   fit: BoxFit.contain,
                 ),
               ),

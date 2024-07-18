@@ -36,19 +36,19 @@ class PaymentMethodPage extends StatelessWidget {
             ),
           ),
           PaymentOptionTile(
-            icon: 'https://i.imgur.com/7pI5714.png',
+            icon: 'http://zhanggp.top/grocery/images/7pI5714.png',
             label: 'Paypal',
             accountName: 'mypaypal@gmail.com',
             onTap: () {},
           ),
           PaymentOptionTile(
-            icon: 'https://i.imgur.com/aRJj3iU.png',
+            icon: 'http://zhanggp.top/grocery/images/aRJj3iU.png',
             label: 'Cash on Delivery',
             accountName: 'Pay in Cash',
             onTap: () {},
           ),
           PaymentOptionTile(
-            icon: 'https://i.imgur.com/lLUcMC1.png',
+            icon: 'http://zhanggp.top/grocery/images/lLUcMC1.png',
             label: 'Apple Pay',
             accountName: 'applepay.com',
             onTap: () {},

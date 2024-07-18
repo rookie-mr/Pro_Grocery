@@ -61,7 +61,8 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
               expiryDate: expireDate.text,
               cardHolderName: holderName.text,
               isHolderNameVisible: true,
-              backgroundNetworkImage: 'https://i.imgur.com/AMA5llS.png',
+              backgroundNetworkImage:
+                  'http://zhanggp.top/grocery/images/AMA5llS.png',
               cvvCode: cvv.text,
               showBackView: false,
               cardType: CardType.visa,

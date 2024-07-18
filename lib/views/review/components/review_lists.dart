@@ -20,7 +20,7 @@ class ReviewLists extends StatelessWidget {
             totalLikes: 24,
             review:
                 'Aliqua officia duis occaecat consectetur fugiat nostrud anim dolor commodo officia proident. Voluptate nisi reprehenderit.',
-            userPicture: 'https://i.imgur.com/BAOH63b.png',
+            userPicture: 'http://zhanggp.top/grocery/images/BAOH63b.png',
           );
         },
         itemCount: 7,

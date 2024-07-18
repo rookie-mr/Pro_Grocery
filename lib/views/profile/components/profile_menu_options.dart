@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 
 import '../../../core/constants/constants.dart';
 import '../../../core/routes/app_routes.dart';
@@ -48,7 +49,11 @@ class ProfileMenuOptions extends StatelessWidget {
           ProfileListTile(
             title: 'Logout',
             icon: AppIcons.profileLogout,
-            onTap: () => Navigator.pushNamed(context, AppRoutes.loginOrSignup),
+            onTap: () {
+              DefaultCacheManager manager = DefaultCacheManager();
+              manager.emptyCache();
+              Navigator.pushNamed(context, AppRoutes.loginOrSignup);
+            },
           ),
         ],
       ),

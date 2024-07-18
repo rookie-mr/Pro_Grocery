@@ -19,7 +19,7 @@ class OrderFailedPage extends StatelessWidget {
               child: const AspectRatio(
                 aspectRatio: 1 / 1,
                 child: NetworkImageWithLoader(
-                  'https://i.imgur.com/vPVGf8C.png',
+                  'http://zhanggp.top/grocery/images/vPVGf8C.png',
                   fit: BoxFit.contain,
                 ),
               ),

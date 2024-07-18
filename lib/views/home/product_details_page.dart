@@ -32,9 +32,9 @@ class ProductDetailsPage extends StatelessWidget {
           children: [
             const ProductImagesSlider(
               images: [
-                'https://i.imgur.com/3o6ons9.png',
-                'https://i.imgur.com/3o6ons9.png',
-                'https://i.imgur.com/3o6ons9.png',
+                'http://zhanggp.top/grocery/images/3o6ons9.png',
+                'http://zhanggp.top/grocery/images/3o6ons9.png',
+                'http://zhanggp.top/grocery/images/3o6ons9.png',
               ],
             ),
             SizedBox(
