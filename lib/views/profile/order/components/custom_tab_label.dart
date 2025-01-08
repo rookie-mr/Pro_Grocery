@@ -16,11 +16,7 @@ class CustomTabLabel extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          '$label ',
-        ),
-        Text(
-          value,
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(),
+          '$label $value',
         ),
       ],
     );

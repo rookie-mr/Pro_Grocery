@@ -14,12 +14,17 @@ class ProfileHeader extends StatelessWidget {
     return Stack(
       children: [
         /// Background
-        Image.asset('assets/images/profile_page_background.png'),
+        Image.asset(
+          'assets/images/profile_page_background.png',
+          width: MediaQuery.of(context).size.width,
+          fit: BoxFit.fitWidth,
+        ),
 
         /// Content
         Column(
           children: [
             AppBar(
+              automaticallyImplyLeading: false,
               title: const Text('Profile'),
               elevation: 0,
               backgroundColor: Colors.transparent,

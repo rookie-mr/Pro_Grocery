@@ -30,8 +30,8 @@ class PaymentCardTile extends StatelessWidget {
           onTap: onTap,
           borderRadius: AppDefaults.borderRadius,
           child: Container(
-            height: 66,
-            width: 135,
+            height: 80,
+            width: 150,
             padding: const EdgeInsets.symmetric(),
             decoration: BoxDecoration(
               borderRadius: AppDefaults.borderRadius,

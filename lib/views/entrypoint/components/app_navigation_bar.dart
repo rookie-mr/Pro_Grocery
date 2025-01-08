@@ -17,7 +17,7 @@ class AppBottomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       shape: const CircularNotchedRectangle(),
-      notchMargin: AppDefaults.margin,
+      notchMargin: AppDefaults.margin / 2,
       color: AppColors.scaffoldBackground,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -35,8 +35,8 @@ class AppBottomNavigationBar extends StatelessWidget {
             onTap: () => onNavTap(1),
           ),
           const Padding(
-            padding: EdgeInsets.all(AppDefaults.padding * 2),
-            child: SizedBox(width: AppDefaults.margin),
+            padding: EdgeInsets.all(AppDefaults.padding),
+            // child: SizedBox(width: AppDefaults.margin),
           ),
           /* <---- We have to leave this 3rd index (2) for the cart item -----> */
 
@@ -47,7 +47,7 @@ class AppBottomNavigationBar extends StatelessWidget {
             onTap: () => onNavTap(3),
           ),
           BottomAppBarItem(
-            name: 'Profile',
+            name: 'Mine',
             iconLocation: AppIcons.profile,
             isActive: currentIndex == 4,
             onTap: () => onNavTap(4),

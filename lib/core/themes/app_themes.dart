@@ -16,16 +16,26 @@ class AppTheme {
       scaffoldBackgroundColor: Colors.white,
       brightness: Brightness.light,
       appBarTheme: const AppBarTheme(
-        elevation: 0.3,
+        elevation: 0,
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Colors.black),
         titleTextStyle: TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.bold,
           fontFamily: "Gilroy",
+          fontSize: 16.0,
         ),
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarBrightness: Brightness.light,
+        ),
+        shape: BorderDirectional(
+          bottom: BorderSide(width: 0.1, color: AppColors.placeholder),
+        ),
+      ),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        elevation: 1,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(28.0),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
@@ -81,6 +91,23 @@ class AppTheme {
             color: AppColors.primary,
             width: 2,
           ),
+        ),
+        dividerColor: AppColors.placeholder,
+        dividerHeight: 0.1,
+      ),
+      searchBarTheme: SearchBarThemeData(
+        elevation: const WidgetStatePropertyAll(0.0),
+        shape: WidgetStatePropertyAll(RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+        )),
+        backgroundColor:
+            const WidgetStatePropertyAll(AppColors.textInputBackground),
+        padding: const WidgetStatePropertyAll(EdgeInsets.only(
+          left: AppDefaults.padding / 2,
+          right: AppDefaults.padding / 4,
+        )),
+        hintStyle: const WidgetStatePropertyAll(
+          TextStyle(color: AppColors.placeholder),
         ),
       ),
     );

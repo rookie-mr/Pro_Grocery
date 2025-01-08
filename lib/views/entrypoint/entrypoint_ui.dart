@@ -34,8 +34,8 @@ class _EntryPointUIState extends State<EntryPointUI> {
   List<Widget> pages = [
     const HomePage(),
     const MenuPage(),
-    const CartPage(isHomePage: true),
-    const SavePage(isHomePage: false),
+    const CartPage(),
+    const SavePage(),
     const ProfilePage(),
   ];
 
@@ -60,13 +60,20 @@ class _EntryPointUIState extends State<EntryPointUI> {
           onBottomNavigationTap(2);
         },
         backgroundColor: AppColors.primary,
-        child: SvgPicture.asset(AppIcons.cart),
+        child: SvgPicture.asset(
+          AppIcons.cart,
+          width: 28,
+          color: Colors.white,
+        ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: AppBottomNavigationBar(
         currentIndex: currentIndex,
         onNavTap: onBottomNavigationTap,
       ),
+      backgroundColor: currentIndex == 4
+          ? AppColors.cardColor
+          : AppColors.scaffoldBackground,
     );
   }
 }

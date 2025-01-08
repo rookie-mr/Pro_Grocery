@@ -8,7 +8,7 @@ class TitleAndActionButton extends StatelessWidget {
     required this.title,
     this.actionLabel,
     required this.onTap,
-    this.isHeadline = true,
+    this.isHeadline = false,
   }) : super(key: key);
 
   final String title;
@@ -28,16 +28,19 @@ class TitleAndActionButton extends StatelessWidget {
             style: isHeadline
                 ? Theme.of(context)
                     .textTheme
-                    .headlineSmall
+                    .titleLarge
                     ?.copyWith(color: Colors.black)
                 : Theme.of(context)
                     .textTheme
-                    .bodyLarge
+                    .titleMedium
                     ?.copyWith(color: Colors.black),
           ),
           TextButton(
             onPressed: onTap,
-            child: Text(actionLabel ?? 'View All'),
+            child: Text(
+              actionLabel ?? 'View All',
+              style: const TextStyle(color: AppColors.primary),
+            ),
           ),
         ],
       ),

@@ -52,7 +52,7 @@ class BundleTileSquare extends StatelessWidget {
                     data.name,
                     style: Theme.of(context)
                         .textTheme
-                        .titleLarge
+                        .titleMedium
                         ?.copyWith(color: Colors.black),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -69,10 +69,10 @@ class BundleTileSquare extends StatelessWidget {
                 children: [
                   Text(
                     '\$${data.price.toInt()}',
-                    style: Theme.of(context)
-                        .textTheme
-                        .titleLarge
-                        ?.copyWith(color: Colors.black),
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w700,
+                        ),
                   ),
                   const SizedBox(width: 4),
                   Text(

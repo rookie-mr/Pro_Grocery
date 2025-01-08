@@ -19,15 +19,14 @@ class SearchResultPage extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(AppDefaults.padding),
-            child: TextField(
-              decoration: InputDecoration(
-                labelText: 'Search Field',
-                suffixIcon: Padding(
-                  padding: const EdgeInsets.all(AppDefaults.padding),
-                  child: SvgPicture.asset(AppIcons.search),
-                ),
-                suffixIconConstraints: const BoxConstraints(),
-              ),
+            child: SearchBar(
+              hintText: 'Search',
+              trailing: [
+                IconButton(
+                  onPressed: () {},
+                  icon: SvgPicture.asset(AppIcons.search),
+                )
+              ],
             ),
           ),
           Align(
@@ -50,7 +49,7 @@ class SearchResultPage extends StatelessWidget {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 mainAxisSpacing: 16,
-                childAspectRatio: 0.85,
+                childAspectRatio: 0.64,
               ),
               itemCount: 16,
               itemBuilder: (context, index) {

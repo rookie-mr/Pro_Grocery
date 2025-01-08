@@ -106,16 +106,14 @@ class _SearchField extends StatelessWidget {
       data: Theme.of(context).copyWith(
         inputDecorationTheme: AppTheme.secondaryInputDecorationTheme,
       ),
-      child: TextField(
-        decoration: InputDecoration(
-          labelText: 'Search',
-          hintText: 'Type a word',
-          suffixIcon: Padding(
-            padding: const EdgeInsets.all(AppDefaults.padding),
-            child: SvgPicture.asset(AppIcons.search),
-          ),
-          suffixIconConstraints: const BoxConstraints(),
-        ),
+      child: SearchBar(
+        hintText: 'Search',
+        trailing: [
+          IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset(AppIcons.search),
+          )
+        ],
       ),
     );
   }

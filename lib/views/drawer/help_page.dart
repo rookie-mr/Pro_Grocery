@@ -3,7 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/constants.dart';
-import '../../core/themes/app_themes.dart';
 import 'components/help_topics.dart';
 import 'components/top_questions.dart';
 
@@ -30,41 +29,22 @@ class HelpPage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
               ),
-              const _SearchBar(),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: AppDefaults.padding),
+                child: SearchBar(
+                  hintText: 'Search',
+                  trailing: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: SvgPicture.asset(AppIcons.search),
+                    )
+                  ],
+                ),
+              ),
               const TopQuestions(),
               const HelpTopics(),
             ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _SearchBar extends StatelessWidget {
-  const _SearchBar({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Theme(
-      data: Theme.of(context).copyWith(
-        inputDecorationTheme: AppTheme.secondaryInputDecorationTheme,
-      ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: AppDefaults.padding),
-        child: TextField(
-          decoration: InputDecoration(
-            labelText: 'Search',
-            suffixIcon: IconButton(
-              icon: SvgPicture.asset(
-                AppIcons.search,
-                width: 24,
-                color: AppColors.placeholder,
-              ),
-              onPressed: () {},
-            ),
           ),
         ),
       ),

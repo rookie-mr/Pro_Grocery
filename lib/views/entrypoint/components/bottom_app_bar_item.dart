@@ -22,15 +22,17 @@ class BottomAppBarItem extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Column(
-        // mainAxisSize: MainAxisSize.min,
+        mainAxisSize: MainAxisSize.min,
         children: [
           SvgPicture.asset(
+            width: 24.0,
+            height: 24.0,
             iconLocation,
             color: isActive ? AppColors.primary : AppColors.placeholder,
           ),
           Text(
             name,
-            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+            style: Theme.of(context).textTheme.titleSmall?.copyWith(
                   color: isActive ? AppColors.primary : AppColors.placeholder,
                 ),
           ),

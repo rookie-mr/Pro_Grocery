@@ -50,7 +50,10 @@ class AddressPage extends StatelessWidget {
                 },
                 backgroundColor: AppColors.primary,
                 splashColor: AppColors.primary,
-                child: const Icon(Icons.add),
+                child: const Icon(
+                  Icons.add,
+                  color: Colors.white,
+                ),
               ),
             ),
           ],

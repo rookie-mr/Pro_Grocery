@@ -364,7 +364,8 @@ class _FilterHeader extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.zero, backgroundColor: AppColors.scaffoldWithBoxBackground,
+                padding: EdgeInsets.zero,
+                backgroundColor: AppColors.scaffoldWithBoxBackground,
               ),
               child: const Icon(
                 Icons.close,
@@ -380,18 +381,15 @@ class _FilterHeader extends StatelessWidget {
                 color: Colors.black,
               ),
         ),
-        SizedBox(
-          width: 56,
-          child: TextButton(
-            onPressed: () {},
-            child: Text(
-              'Reset',
-              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: Colors.black,
-                  ),
-            ),
+        TextButton(
+          onPressed: () {},
+          child: Text(
+            'Reset',
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                  color: Colors.black,
+                ),
           ),
-        )
+        ),
       ],
     );
   }

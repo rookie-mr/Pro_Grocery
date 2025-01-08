@@ -23,7 +23,7 @@ class PaymentSystem extends StatelessWidget {
               'Select Payment System',
               style: Theme.of(context)
                   .textTheme
-                  .bodyLarge
+                  .titleMedium
                   ?.copyWith(color: Colors.black),
             ),
           ),

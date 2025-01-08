@@ -16,7 +16,6 @@ class AddressSelector extends StatelessWidget {
           title: 'Select Delivery Address',
           actionLabel: 'Add New',
           onTap: () {},
-          isHeadline: false,
         ),
         AddressCard(
           label: 'Home Address',
