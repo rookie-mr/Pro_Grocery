@@ -7,7 +7,7 @@ import 'components/help_topics.dart';
 import 'components/top_questions.dart';
 
 class HelpPage extends StatelessWidget {
-  const HelpPage({Key? key}) : super(key: key);
+  const HelpPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +45,38 @@ class HelpPage extends StatelessWidget {
               const TopQuestions(),
               const HelpTopics(),
             ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _SearchBar extends StatelessWidget {
+  const _SearchBar();
+
+  @override
+  Widget build(BuildContext context) {
+    return Theme(
+      data: Theme.of(context).copyWith(
+        inputDecorationTheme: AppTheme.secondaryInputDecorationTheme,
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: AppDefaults.padding),
+        child: TextField(
+          decoration: InputDecoration(
+            labelText: 'Search',
+            suffixIcon: IconButton(
+              icon: SvgPicture.asset(
+                AppIcons.search,
+                width: 24,
+                colorFilter: const ColorFilter.mode(
+                  AppColors.placeholder,
+                  BlendMode.srcIn,
+                ),
+              ),
+              onPressed: () {},
+            ),
           ),
         ),
       ),

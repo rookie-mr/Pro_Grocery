@@ -6,7 +6,7 @@ import '../../../core/constants/app_defaults.dart';
 import '../../../core/routes/app_routes.dart';
 
 class DeliverySuccessfullDialog extends StatelessWidget {
-  const DeliverySuccessfullDialog({Key? key}) : super(key: key);
+  const DeliverySuccessfullDialog({super.key});
 
   @override
   Widget build(BuildContext context) {

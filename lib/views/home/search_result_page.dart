@@ -6,7 +6,7 @@ import '../../core/components/product_tile_square.dart';
 import '../../core/constants/constants.dart';
 
 class SearchResultPage extends StatelessWidget {
-  const SearchResultPage({Key? key}) : super(key: key);
+  const SearchResultPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,7 @@ class SearchResultPage extends StatelessWidget {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 mainAxisSpacing: 16,
-                childAspectRatio: 0.64,
+                childAspectRatio: 0.72,
               ),
               itemCount: 16,
               itemBuilder: (context, index) {

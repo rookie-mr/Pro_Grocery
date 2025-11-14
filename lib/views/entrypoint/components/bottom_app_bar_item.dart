@@ -5,12 +5,12 @@ import '../../../core/constants/constants.dart';
 
 class BottomAppBarItem extends StatelessWidget {
   const BottomAppBarItem({
-    Key? key,
+    super.key,
     required this.iconLocation,
     required this.name,
     required this.isActive,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   final String iconLocation;
   final String name;
@@ -28,7 +28,10 @@ class BottomAppBarItem extends StatelessWidget {
             width: 24.0,
             height: 24.0,
             iconLocation,
-            color: isActive ? AppColors.primary : AppColors.placeholder,
+            colorFilter: ColorFilter.mode(
+              isActive ? AppColors.primary : AppColors.placeholder,
+              BlendMode.srcIn,
+            ),
           ),
           Text(
             name,
